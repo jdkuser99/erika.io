@@ -7,47 +7,49 @@
 </head>
 <body>
 <!-- Navigation-->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark"><!-- definimos el estilo de nuestra navegacion -->
     <a class="navbar-brand" href="index.html">
+        <!-- la etiqueta a contiene a index.html el cual permitira su redireccionamiento-->
         <span class="d-block d-lg-none">RCTS</span>
-        <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-start mb-2"
-                                             src="resources/img/logo.jpeg" height="50" width="50"/></span>
+        <!--la etiqueta span solo se mostrara si se disminuye el tamaño de la pantalla-->
+        <span class="d-none d-lg-block">
+            <img class="img-fluid img-profile rounded-start mb-2"
+                 src="resources/img/logo.jpeg" height="50" width="50"/>
+            <!-- definimos el logo para nuestrapagina y le aplicaomo un ancho y alto de 50-->
+        </span>
     </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span
-            class="navbar-toggler-icon"></span></button>
+            class="navbar-toggler-icon"></span></button><!-- definimos un boton para que despliegue las opciones del menu
+            este boton solo se mostrara cuando la pantalla de la pagina sea minima -->
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav">
-            <li class="nav-item"><a class="nav-link active" href="#">Inicio</a></li>
-
-             <li class="nav-item"><a class="nav-link " href="contenido.html">Contenido</a></li>
-              <li class="nav-item"><a class="nav-link" href="galeria.html">Galeria</a></li>
+        <ul class="navbar-nav"><!-- contendra los items que tendra nuestro menu -->
+            <li class="nav-item"><a class="nav-link active" href="#">Inicio</a></li><!-- item 1 inicio-->
+            <li class="nav-item"><a class="nav-link " href="contenido.html">Contenido</a></li><!-- item 2 centenido-->
+            <li class="nav-item"><a class="nav-link" href="galeria.html">Galeria</a></li><!-- sitem 3 galeria-->
             <li class="nav-item"><a class="nav-link" href="softwaredesarroladores.html">Desarrolladores</a></li>
-          </ul>
-      </div>
-  </nav>
-  <!-- Page Content-->
+            <!-- sitem 4 desarrolladores-->
+        </ul>
+    </div>
+</nav>
+
+<!-- contenido de la pagina-->
 <div class="container-fluid">
-    <!-- About-->
+    <!-- seccion de inicio-->
     <section id="inicio">
-
-        <div class="resume-section-content">
-            <img src="resources/img/navbarr.png" class="img-fluid me-auto" >
-
-            <div class="social-icons">
-                <h1 class="mb-0">
-                    La inteligencia artificial no es un sustituto de la inteligencia humana,
-                    <span class="text-success"> sino una herramienta poderosa que puede amplificar nuestras capacidades  </span>
-
-                </h1>
-
-            </div>
-        </div>
+        <article>
+            <img src="resources/img/navbarr.png" class="img-fluid me-auto"><!-- definimos una img de presentacion -->
+            <h1>
+                La inteligencia artificial no es un sustituto de la inteligencia humana,
+                <span class="text-success"> sino una herramienta poderosa que puede amplificar nuestras capacidades  </span>
+            </h1>
+        </article>
     </section>
-    <hr class="m-0"/>
+    <hr class="m-5"/>
+    <br><!-- espaciado-->
     <br>
     <br>
-    <br>
+    <!-- seccion de software y lenguajes-->
     <section>
         <article>
             <h2 class="mb-5">SOFTWARE Y LENGUAJES DE DESARROLLO </h2>
@@ -65,21 +67,27 @@
                                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/CSS.3.svg/1200px-CSS.3.svg.png"
                                  alt="css" height="200" width="150"></th>
                         <th><img class="align-content-center"
-                                 src="https://wildcardcorp.com/image-repository/javascript-icon.png/@@images/image.png" alt="js"
+                                 src="https://wildcardcorp.com/image-repository/javascript-icon.png/@@images/image.png"
+                                 alt="js"
                                  width="190" height="200"></th>
                     </tr>
                     </thead>
                     <tbody>
                     <tr>
-                        <td>Es un lenguaje de marcado que se utiliza para estructurar y organizar el contenido de una página
-                            web, utilizando etiquetas para definir elementos como encabezados, párrafos, enlaces, entre otros.
+                        <td>Es un lenguaje de marcado que se utiliza para estructurar y organizar el contenido de una
+                            página
+                            web, utilizando etiquetas para definir elementos como encabezados, párrafos, enlaces, entre
+                            otros.
                         </td>
-                        <td>Es un lenguaje de estilo que se utiliza para dar estilo y presentación a las páginas web. Permite
-                            controlar el diseño, la apariencia y la disposición de los elementos HTML mediante reglas que
+                        <td>Es un lenguaje de estilo que se utiliza para dar estilo y presentación a las páginas web.
+                            Permite
+                            controlar el diseño, la apariencia y la disposición de los elementos HTML mediante reglas
+                            que
                             especifican propiedades como colores, fuentes y márgenes.
                         </td>
                         <td>
-                            Es un lenguaje de programación que se utiliza para hacer que las páginas web sean interactivas y
+                            Es un lenguaje de programación que se utiliza para hacer que las páginas web sean
+                            interactivas y
                             dinámicas. Permite manipular el contenido, responder a eventos del usuario y modificar el
                             comportamiento de la página en tiempo real.
                         </td>
